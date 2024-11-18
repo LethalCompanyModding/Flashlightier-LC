@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.002.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LCMPublishingTemplate", "src/LCMPublishingTemplate/LCMPublishingTemplate.csproj", "{AB5F80E1-8E02-466C-93E3-61670519ABE8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Flashlightier_LC", "src/Flashlightier_LC/Flashlightier_LC.csproj", "{EB012E02-9821-4291-84AD-8A0816C9FB56}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{AB5F80E1-8E02-466C-93E3-61670519ABE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AB5F80E1-8E02-466C-93E3-61670519ABE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AB5F80E1-8E02-466C-93E3-61670519ABE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AB5F80E1-8E02-466C-93E3-61670519ABE8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB012E02-9821-4291-84AD-8A0816C9FB56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB012E02-9821-4291-84AD-8A0816C9FB56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB012E02-9821-4291-84AD-8A0816C9FB56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB012E02-9821-4291-84AD-8A0816C9FB56}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {1514480A-2DCB-4E4D-A8E4-0BD4D1F00A25}
+		SolutionGuid = {AADB08DB-726D-42B1-8B01-41BAF84041B2}
 	EndGlobalSection
 EndGlobal

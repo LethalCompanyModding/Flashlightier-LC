@@ -1,6 +1,6 @@
-# LCMPublishingTemplate
+# Flashlightier_LC
 
-__PROJECT_DESC__
+Allows modifying various values of the flashlight/pro flashlight
 
 ## How to use this Template
 

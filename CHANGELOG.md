@@ -1,4 +1,4 @@
-# LCMPublishingTemplate Changelog
+# Flashlightier_LC Changelog
 
 ## Describe your changes for each release here
 
