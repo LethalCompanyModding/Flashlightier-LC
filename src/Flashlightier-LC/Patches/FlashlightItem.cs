@@ -2,7 +2,7 @@ using HarmonyLib;
 
 namespace FlashlightierLC.Patches;
 
-public class FlashLightItemPatches
+public class FlashLightItem_Patches
 {
     [HarmonyPatch(typeof(FlashlightItem), nameof(FlashlightItem.Start))]
     [HarmonyPostfix]
@@ -12,11 +12,14 @@ public class FlashLightItemPatches
         {
             //Pro flash
             case 0:
+                __instance.flashlightBulb.ModifyLight(Plugin.Flashlights.ProFlashlight);
                 break;
             //Smol flash
             case 1:
+                __instance.flashlightBulb.ModifyLight(Plugin.Flashlights.SmallFlashlight);
                 break;
-
+            default:
+                return;
         }
     }
 }
