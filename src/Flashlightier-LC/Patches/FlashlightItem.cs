@@ -12,11 +12,11 @@ public class FlashLightItem_Patches
         {
             //Pro flash
             case 0:
-                __instance.flashlightBulb.ModifyLight(Plugin.Flashlights.ProFlashlight);
+                __instance.ModifyFlashlight(Plugin.Flashlights.ProFlashlight);
                 break;
             //Smol flash
             case 1:
-                __instance.flashlightBulb.ModifyLight(Plugin.Flashlights.SmallFlashlight);
+                __instance.ModifyFlashlight(Plugin.Flashlights.SmallFlashlight);
                 break;
             default:
                 return;
