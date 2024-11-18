@@ -1,5 +1,8 @@
 ﻿using BepInEx;
 using BepInEx.Logging;
+using BepInEx.Configuration;
+using UnityEngine.InputSystem.EnhancedTouch;
+using FlashlightierLC;
 
 /*
   Here are some basic resources on code style and naming conventions to help
@@ -13,7 +16,8 @@ using BepInEx.Logging;
 [BepInPlugin(LCMPluginInfo.PLUGIN_GUID, LCMPluginInfo.PLUGIN_NAME, LCMPluginInfo.PLUGIN_VERSION)]
 public class Plugin : BaseUnityPlugin
 {
-  public static ManualLogSource Log = null!;
+  internal static ManualLogSource Log = null!;
+  internal static FlashlightConfig Flashlights = null!;
 
   private void Awake()
   {
@@ -25,9 +29,16 @@ public class Plugin : BaseUnityPlugin
       We assign it here
     */
     Log = Logger;
-
     // Log our awake here so we can see it in LogOutput.txt file
     Log.LogInfo($"Plugin {LCMPluginInfo.PLUGIN_NAME} is loaded!");
+
+    //Bind our defaults here
+
+
+
+
+    //Pass our config file out for other methods to use
+    Flashlights = new(Config);
   }
 
 }
