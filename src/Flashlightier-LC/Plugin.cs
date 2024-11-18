@@ -3,6 +3,8 @@ using BepInEx.Logging;
 using BepInEx.Configuration;
 using UnityEngine.InputSystem.EnhancedTouch;
 using FlashlightierLC;
+using HarmonyLib;
+using FlashlightierLC.Patches;
 
 /*
   Here are some basic resources on code style and naming conventions to help
@@ -32,13 +34,13 @@ public class Plugin : BaseUnityPlugin
     // Log our awake here so we can see it in LogOutput.txt file
     Log.LogInfo($"Plugin {LCMPluginInfo.PLUGIN_NAME} is loaded!");
 
-    //Bind our defaults here
-
-
-
-
     //Pass our config file out for other methods to use
     Flashlights = new(Config);
+
+    //Patch here
+    Harmony patcher = new(LCMPluginInfo.PLUGIN_GUID);
+    patcher.PatchAll(typeof(FlashLightItem_Patches));
+    patcher.PatchAll(typeof(PlayerControllerB_Patches));
   }
 
 }
