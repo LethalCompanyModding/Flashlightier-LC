@@ -23,6 +23,7 @@
     <ProjectDepsFileName>$(Product).deps.json</ProjectDepsFileName>
     <RootNamespace>$(Product)</RootNamespace>
     <TargetName>$(Product)</TargetName>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
 
   <!--
