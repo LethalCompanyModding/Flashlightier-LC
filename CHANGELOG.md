@@ -1,5 +1,6 @@
-# Flashlightier_LC Changelog
+# Flashlightier LC Changelog
 
-## Describe your changes for each release here
+## Release 1.0.0
 
-The contents of this file will display in the Changelog tab on the Thunderstore
+- Initial Release
+- Allows basic configuration of Flashlights
