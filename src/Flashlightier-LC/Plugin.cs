@@ -1,8 +1,6 @@
 ﻿using BepInEx;
 using BepInEx.Logging;
-using BepInEx.Configuration;
-using UnityEngine.InputSystem.EnhancedTouch;
-using FlashlightierLC;
+using FlashlightierLC.Config;
 using HarmonyLib;
 using FlashlightierLC.Patches;
 
