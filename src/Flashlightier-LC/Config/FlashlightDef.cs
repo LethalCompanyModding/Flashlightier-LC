@@ -1,3 +1,4 @@
+using System;
 using BepInEx.Configuration;
 
 namespace FlashlightierLC.Config;
@@ -46,6 +47,14 @@ internal class FlashlightDefinition
         {
             throw new($"Unable to parse color value blue | {values[2]}");
         }
+
+        Red = Math.Clamp(Red, 0f, 255f);
+        Green = Math.Clamp(Green, 0f, 255f);
+        Blue = Math.Clamp(Blue, 0f, 255f);
+
+        Red /= 255f;
+        Green /= 255f;
+        Blue /= 255f;
 
         return (Red, Green, Blue);
     }
