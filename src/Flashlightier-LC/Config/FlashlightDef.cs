@@ -36,15 +36,15 @@ internal class FlashlightDefinition
         }
         if (!float.TryParse(values[0], out var Red))
         {
-            throw new("Unable to parse color value red");
+            throw new($"Unable to parse color value red | {values[0]}");
         }
         if (!float.TryParse(values[1], out var Green))
         {
-            throw new("Unable to parse color value green");
+            throw new($"Unable to parse color value green | {values[1]}");
         }
         if (!float.TryParse(values[2], out var Blue))
         {
-            throw new("Unable to parse color value blue");
+            throw new($"Unable to parse color value blue | {values[2]}");
         }
 
         return (Red, Green, Blue);
