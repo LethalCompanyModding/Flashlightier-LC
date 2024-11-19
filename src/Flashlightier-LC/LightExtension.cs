@@ -13,6 +13,8 @@ internal static class LightExt
         self.colorTemperature = def.ColorTemp.Value;
         self.intensity = def.Intensity.Value;
         self.spotAngle = def.Size.Value;
+        self.useColorTemperature = def.UseColorTempValue.Value;
+        self.color = def.LightColor;
     }
 
     internal static void ModifyFlashlight(this FlashlightItem self, FlashlightDefinition def)
