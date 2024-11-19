@@ -29,5 +29,7 @@ internal class FlashlightConfig
             Config.Bind("ProFlash", "UseColorTempValue", true, "The game uses color temp to describe the light\nSetting this to false uses the RGB color instead"),
             Config.Bind("ProFlash", "LightColor", "128,128,128", "The color to use for the light.\nFollows the format 'Red,Green,Blue'\nIf you don't know what to put here google 'color picker'")
         );
+
+        Config.Save();
     }
 }
