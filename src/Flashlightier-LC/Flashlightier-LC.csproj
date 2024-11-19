@@ -11,7 +11,7 @@
     <AssemblyName>dev.mamallama.lcmod.flashlightier</AssemblyName>
     <Authors>LethalCompanyModding</Authors>
     <Description>Allows modifying various values of the flashlight/pro flashlight</Description>
-    <Product>Flashlightier_LC</Product>
+    <Product>Flashlightier-LC</Product>
     <!--
       Except this, you should keep this up to date with your publishing tags.
     -->

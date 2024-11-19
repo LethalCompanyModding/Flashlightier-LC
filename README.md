@@ -1,4 +1,4 @@
-# Flashlightier_LC
+# Flashlightier-LC
 
 Allows modifying various values of the flashlight/pro flashlight.
 
