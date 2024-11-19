@@ -1,10 +1,11 @@
 using UnityEngine;
+using FlashlightierLC.Config;
 
 namespace FlashlightierLC;
 
 internal static class LightExt
 {
-    internal static void ModifyLight(this Light self, FlashlightConfig.FlashlightDefinition def)
+    internal static void ModifyLight(this Light self, FlashlightDefinition def)
     {
         if (!def.Enabled.Value)
             return;
@@ -14,7 +15,7 @@ internal static class LightExt
         self.spotAngle = def.Size.Value;
     }
 
-    internal static void ModifyFlashlight(this FlashlightItem self, FlashlightConfig.FlashlightDefinition def)
+    internal static void ModifyFlashlight(this FlashlightItem self, FlashlightDefinition def)
     {
         if (!def.Enabled.Value)
             return;
